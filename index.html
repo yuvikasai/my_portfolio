@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="assets/avatar.png" alt="Your Avatar" class="avatar" />
+    <h1>Yuvika</h1>
+    <p>Software Enthusiast with a Curious Mind</p>
+  </header>
+
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <p>Hello! I'm Yuvika, a student with a passion for coding. Here, you'll find a collection of my projects.</p>
+  </section>
+
+  <section id="projects" class="container">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <a href="https://yuvikasai.github.io/MindCare/" target="_blank">
+        <img src="assets/project1.jpg" alt="Screenshot of Project 1" class="project-img" />
+        <h3>MindCare</h3>
+      </a>
+      <p>A simple chatbot to support your mental health with care, calm, and conversation.</p>
+    </div>
+
+    <div class="project">
+      <a href="https://github.com/yuvikasai/CoutureAI" target="_blank">
+        <img src="assets/project2.jpg" alt="Screenshot of Project 2" class="project-img" />
+        <h3>CoutureAI</h3>
+      </a>
+      <p>A fun tool to help you picture your fashion designs with just a few words.</p>
+    </div>
+
+    <div class="project">
+      <a href="https://github.com/yuvikasai/mood_tracker" target="_blank">
+        <img src="assets/project3.jpg" alt="Screenshot of Project 3" class="project-img" />
+        <h3>Stardew Mood Tracker</h3>
+      </a>
+      <p>A cozy little mood tracker that feels like playing Stardew Valley.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="container">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <footer>
+    <p>&copy; Made with ☕ by Yuvika</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
