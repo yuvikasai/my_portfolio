@@ -1,0 +1,147 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Dark mode base styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #121212;
+  color: #f4f4f4;
+}
+
+/* Center container */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+/* Header with background image */
+header {
+  position: relative;
+  text-align: center;
+  padding: 60px 20px;
+  color: #fff;
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2Fzz1DFc22BXd2W7GAnelV%2Fheader-bg.jpg?alt=media&token=96a0c047-7afa-454f-99f6-f899649370a9');
+  background-size: cover;
+  background-position: center;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+header * {
+  position: relative;
+  z-index: 1;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  margin-bottom: 10px;
+}
+
+/* Section headings */
+h2 {
+  margin-bottom: 10px;
+  color: #4db6ac;
+}
+
+/* Project cards */
+.project {
+  background: #1e1e1e;
+  padding: 20px;
+  margin: 20px 0;
+  border-left: 4px solid #4db6ac;
+  box-shadow: 0 0 10px rgba(77, 182, 172, 0.5);
+  color: #ddd;
+  border-radius: 6px;
+  text-align: center;
+}
+
+/* Make project links retain design */
+.project a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+.project a:hover h3 {
+  text-decoration: underline;
+}
+
+/* Project images */
+.project-img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* Contact form */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+form input,
+form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background-color: #222;
+  color: #eee;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #999;
+}
+
+form button {
+  background-color: #4db6ac;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #399c93;
+}
+
+#formMessage {
+  margin-top: 10px;
+  color: #4db6ac;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #000;
+  color: #aaa;
+  padding: 15px;
+  margin-top: 20px;
+  font-size: 0.9em;
+}
