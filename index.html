@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="assets/avatar.png" alt="Your Avatar" class="avatar" />
+    <h1>Yuvika</h1>
+    <p>Software Enthusiast with a Curious Mind</p>
+  </header>
+
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <p>Hello! I'm Yuvika, a student with a passion for coding. Here, you'll find a collection of my projects.</p>
+  </section>
+
+  <section id="projects" class="container">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <a href="https://yuvikasai.github.io/MindCare/" target="_blank">
+        <img src="assets/mindcare.jpg" alt="Screenshot of Project 1" class="project-img" />
+        <h3>MindCare</h3>
+      </a>
+      <p>A simple chatbot to support your mental health with care, calm, and conversation.</p>
+    </div>
+
+    <div class="project">
+      <a href="https://github.com/yuvikasai/banned-books-visualization.git" target="_blank">
+        <img src="assets/data_visual.png" alt="Screenshot of Project 2" class="project-img" />
+        <h3>Banned Books Around the World - Data Visualization</h3>
+      </a>
+      <p>A data visualization project that shows the distribution of banned books around the world.</p>
+    </div>
+
+    <div class="project">
+      <a href="https://github.com/yuvikasai/ai-recipe-generator.git" target="_blank">
+        <img src="assets/recipe.gif" alt="Screenshot of Project 3" class="project-img" />
+        <h3>AI Recipe Generator</h3>
+      </a>
+      <p>A smart tool that generates delicious recipes based on your uploaded pictures.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="container">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <footer>
+    <p>&copy; Made by Yuvika</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
